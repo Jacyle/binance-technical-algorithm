@@ -1,2 +1,2 @@
-# binance-technical-algorithm
+## binance-technical-algorithm
 Technical trading algorithm for Binance
