@@ -6,7 +6,6 @@ import hashlib
 import requests
 import config
 import hmac
-import smtplib
 
 try:
     from urllib import urlencode
