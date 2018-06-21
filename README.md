@@ -33,6 +33,12 @@ https://github.com/binance-exchange/binance-official-api-docs
 
 ---
 
+## Binance Trading Rules
+
+https://support.binance.com/hc/en-us/articles/115000594711-Trading-Rule
+
+---
+
 ## Telegram Channel
 https://t.me/binance_technical_algorithm
 
