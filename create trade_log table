@@ -1,6 +1,0 @@
-﻿drop table binance.trade_log;
-
-create table binance.trade_log
-(time text, order_msg text, order_ticker text, order_id text, order_type text, 
-order_price real, rsi real, order_qty real, balance_ticker real, USDT_ticker real, 
-balance_pair real, USDT_pair real, balance real);
