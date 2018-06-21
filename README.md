@@ -27,6 +27,12 @@ https://public.tableau.com/profile/jacyle/#!/
   
 ---
 
+## Binance Official Documentation for the APIs and Streams
+
+https://github.com/binance-exchange/binance-official-api-docs
+
+---
+
 ## Telegram Channel
 https://t.me/binance_technical_algorithm
 
