@@ -1,8 +1,0 @@
-﻿--create schema binance
-drop table binance.ticker_data;
-create table binance.ticker_data
-(timeId text, closeTime bigint, lastId integer, prevClosePrice text, lastPrice text, askQty text, askPrice text, count integer, symbol text, 
- quoteVolume text, volume text, bidPrice text, firstId integer, lastQty text, lowPrice text, bidQty text, 
- priceChangePercent text, priceChange text, highPrice text, openTime bigint, weightedAvgPrice text, openPrice text,
- primary key(closeTime,openTime,symbol));
-
