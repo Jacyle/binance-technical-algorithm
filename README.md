@@ -1,5 +1,5 @@
 # Binance Technical Trading Algorithm
-This project is developing a technical based trading algorithm. 
+This project is developing a technical based trading algorithm to be used with Binance. 
 
 [How the algorithm works](https://github.com/Jacyle/binance-technical-algorithm/blob/master/Algorithm/README.md)
 
