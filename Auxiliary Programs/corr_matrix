@@ -1,0 +1,25 @@
+
+
+import pandas as pd
+import psycopg2
+
+try:
+    conn = psycopg2.connect("dbname='$DATABASE_NAME' user='$USER_NAME' host='localhost' password='$PASSWORD'")
+    cur = conn.cursor()
+except:
+    print ("I am unable to connect to the database")
+
+# Create correlation matrix for the last 1440 minutes (24 hours)
+    
+corr_data = pd.read_sql_query("select symbol,lastprice from binance.ticker_data order by closetime desc limit 1440",conn)
+symbols = corr_data.drop_duplicates(subset='symbol')
+
+table = pd.DataFrame()
+
+for i in symbols['symbol']:
+    table[i] = pd.DataFrame({'%s' % i: corr_data['lastprice'][corr_data['symbol'] == '%s' % i]}).reset_index()['%s' % i].to_frame().astype(float)
+
+corr_table = table.corr()
+
+conn.close()
+cur.close()
